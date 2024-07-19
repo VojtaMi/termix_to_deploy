@@ -1,0 +1,117 @@
+body {
+    background-color: #212529;
+}
+#poster{
+    position: relative;
+    width: 100vw;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 0, 50, 0.4);
+    height: 30%;
+    width: 50%;
+}
+
+.carousel-caption h1 {
+    font-size: 5rem; /* Default size */
+}
+.carousel-caption p {
+    font-size: 2rem; /* Default size */
+}
+.carousel-caption .btn {
+    font-size: 1.25rem; /* Default size */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1.25rem;
+    }
+    .carousel-caption .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 0.875rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 1.25rem;
+    }
+    .carousel-caption p {
+        font-size: 0.75rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.625rem;
+    }
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    margin-bottom: 10px;
+}
+
+.img-hover {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Scale the image to 120% of its original size */
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
