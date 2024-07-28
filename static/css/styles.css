@@ -99,6 +99,13 @@ body {
     font-size: 40px;
   }
 }
+@media (max-width: 768px) {
+    .img-fluid{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
 @media (max-width: 576px) {
   .featurette-heading {
     font-size: 30px;
