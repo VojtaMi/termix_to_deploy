@@ -34,6 +34,10 @@ body {
     font-size: 1.5rem; /* Default size */
 }
 
+.responsive-br {
+    display: none; /* Hide line break on larger screens */
+}
+
 @media (max-width: 991px) {
     #header_logo{
         width: 2rem;
@@ -43,6 +47,9 @@ body {
 @media (max-width: 768px) {
     .carousel-caption{
         height: 40%;
+    }
+    .responsive-br {
+        display: inline;
     }
 }
 
