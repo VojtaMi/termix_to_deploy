@@ -101,8 +101,8 @@ body {
 }
 @media (max-width: 768px) {
     .img-fluid{
-        width: 350px;
         height: 350px;
+        width: auto;
         object-fit: cover;
     }
 }
@@ -112,5 +112,12 @@ body {
   }
   .featurette-divider {
   margin: 2rem; /* Space out the Bootstrap <hr> more */
+  }
 }
+@media (max-width: 400px) {
+    .img-fluid{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
 }
